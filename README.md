@@ -1,5 +1,51 @@
-# beta-rest-sdk-nodejs
+# Cybersource APIs Client Library for Node.js
 
-Proof-of-Concept node.js client bindings for the CyberSource REST API
+## Description ##
+The Cybersource API Client Library enables you to work with Cybersource Rest APIs on your server.
 
-*** DO NOT USE FOR PRODUCTION, OR EVEN THINK ABOUT IT :-) **
+## Basic Example ##
+See the examples/ directory for examples of the key client features.
+
+
+### Configuration ###
+```JS
+    var ApiClient = require('apiClient.js');
+    var options = {
+        apikey: '<apikey>', //replace with your apikey
+        secretKey: '<secretkey>', //replace with your secrekey
+        domain: 'https://sandbox.api.visa.com/cybersource' //url
+    };
+```
+### Authorization ###
+```JS
+    var restClient = new ApiClient(options);
+    restClient
+    .authorizePayment(req)
+    .then(function(res) {
+        console.info("Authorization:" + JSON.stringify(res.body));
+    }, function(err) {
+        console.error("Failed to Authorize" + err.message);
+    });
+```
+
+### Capture ###
+```JS
+
+    var req = {
+        id: <authorization id>,
+        captureRequest: {
+            amount: "100.00"
+        }
+    }
+    var restClient = new ApiClient(options);
+    restClient
+    .capture(req)
+    .then(function(res) {
+        console.info("Capture:" + JSON.stringify(res.body));
+    }, function(err) {
+        console.error("Failed to Authorize" + err.message);
+    });
+```
+
+## Documentation ##
+Cybersource: https://devint.vdp.visa.com/products/cybersource/guides

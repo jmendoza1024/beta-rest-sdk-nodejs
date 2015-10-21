@@ -10,7 +10,7 @@ var ApiClient = (function() {
     'use strict';
 
     var request = require('request');
-    var tokenUtils = require('./securityUtils').TokenUtils;
+    var tokenUtils = require('./lib/securityUtils').TokenUtils;
     var $q = require('q');
 
     function ApiClient(options) {
@@ -2300,4 +2300,5 @@ var ApiClient = (function() {
     return ApiClient;
 })();
 
+//exports.ApiClient = ApiClient;
 module.exports = ApiClient;

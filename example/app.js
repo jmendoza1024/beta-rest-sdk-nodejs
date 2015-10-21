@@ -1,5 +1,5 @@
 //import node sdk
-var ApiClient = require('../lib/apiClient.js');
+var ApiClient = require('../apiClient.js');
 
 //ignore self-signed certificate.
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
