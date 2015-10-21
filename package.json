@@ -1,0 +1,25 @@
+{
+  "name": "beta-rest-sdk-nodejs",
+  "version": "0.0.1",
+  "description": "Payments API Node Client",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CyberSource/beta-rest-sdk-nodejs.git"
+  },
+  "keywords": [
+    "payments",
+    "rest",
+    "dev"
+  ],
+  "author": "Juan Mendoza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CyberSource/beta-rest-sdk-nodejs/issues"
+  },
+  "homepage": "https://github.com/CyberSource/beta-rest-sdk-nodejs",
+  "dependencies": {
+    "request": "~2.65.0",
+    "q": "~1.4.1",
+     "json-stringify-safe": "~5.0.1"
+  }
+}
