@@ -79,11 +79,11 @@ node example/app.js
             "amount": "20.99",
             "currency": "USD",
             "payment": {
-                "encryptedData": "<blob>”
-                "encryptedKey": "<blob>”
+                "encryptedData": "<blob>"
+                "encryptedKey": "<blob>"
             },
             "paymentSolution": "visacheckout",
-             "vcOrderId": "<blob>”
+             "vcOrderId": "<blob>"
         }
     };
     restClient
