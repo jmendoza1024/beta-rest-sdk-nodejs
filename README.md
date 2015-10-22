@@ -55,8 +55,8 @@ node example/app.js
             "amount": "20.99",
             "currency": "USD",
             "payment": {
-                "encryptedData": "<blob>”
-                "encryptedDescriptor": "<blob>”,
+                "encryptedData": "<blob>"
+                "encryptedDescriptor": "<blob>",
                 "encryptedEncoding": "Base64"
             },
             "paymentSolution": "001"
