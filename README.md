@@ -5,11 +5,15 @@ The Cybersource API Client Library enables you to work with Cybersource Rest API
 
 ## Basic Example ##
 See the examples/ directory for examples of the key client features.
-
+### Running the example ###
+Run the example is as easy as open 'example/app.js' provide credentials (apikey and secretkey)
+```JS
+node example/app.js
+```
 
 ### Configuration ###
 ```JS
-    var ApiClient = require('apiClient.js');
+    var ApiClient = require('beta-rest-sdk-nodejs');
     var options = {
         apikey: '<apikey>', //replace with your apikey
         secretKey: '<secretkey>', //replace with your secrekey
